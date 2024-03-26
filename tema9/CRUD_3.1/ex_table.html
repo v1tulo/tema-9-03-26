@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Tabela</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Celular</th>
+        <th>Idade</th>
+        <th>Gênero</th>
+        <th>Ações</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>João</td>
+        <td>123456789</td>
+        <td>25</td>
+        <td>Masculino</td>
+        <td>
+            <button onclick='openModal("1", "João", "123456789", "25", "Masculino")'>Editar</button>
+            <form method='post' action='index.php'>
+                <input type='hidden' name='delete_id' value='1'>
+                <button type='submit' name='delete'>Excluir</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Maria</td>
+        <td>987654321</td>
+        <td>30</td>
+        <td>Feminino</td>
+        <td>
+            <button onclick='openModal("2", "Maria", "987654321", "30", "Feminino")'>Editar</button>
+            <form method='post' action='index.php'>
+                <input type='hidden' name='delete_id' value='2'>
+                <button type='submit' name='delete'>Excluir</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Pedro</td>
+        <td>456789123</td>
+        <td>40</td>
+        <td>Masculino</td>
+        <td>
+            <button onclick='openModal("3", "Pedro", "456789123", "40", "Masculino")'>Editar</button>
+            <form method='post' action='index.php'>
+                <input type='hidden' name='delete_id' value='3'>
+                <button type='submit' name='delete'>Excluir</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
